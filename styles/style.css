@@ -2,10 +2,12 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  padding: 90px 50px 94px;
 }
 
 .header__links-list {
   display: flex;
+  gap: 32px;
 }
 
 .header__links-list-item {
@@ -14,4 +16,36 @@
 
 .header__links-list-item_no-bullit {
   list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+.header__link_active {
+  border-bottom: none;
+}
+
+.header__logo {
+  width: 136px;
+}
+
+.address {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.header__address {
+  max-width: 240px;
+  justify-self: end;
+}
+
+.address a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
