@@ -111,7 +111,7 @@
 .bet-button {
   width: 256px;
   height: 51px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 0;
   color: inherit;
   font-weight: 500;
@@ -181,15 +181,15 @@
 }
 
 .card_type_film {
-  background: #fff url("../images/card-lot-01.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
 }
 
 .card_type_book {
-  background: #fff url("../images/card-lot-02.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
 }
 
 .card_type_picture {
-  background: #fff url("../images/card-lot-03.jpg") no-repeat center / cover;
+  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
 }
 
 .lots__look-more-link {
