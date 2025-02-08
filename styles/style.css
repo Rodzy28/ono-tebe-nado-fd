@@ -141,16 +141,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   list-style: none;
 }
 
 .lots__card-list-item {
+  flex-grow: 1;
   width: 334px;
   min-height: 596px;
 }
 
 .card-link {
+  display: block;
   height: 100%;
   text-decoration: none;
 }
@@ -181,15 +183,15 @@
 }
 
 .card_type_film {
-  background: url("../images/card-lot-01.jpg") no-repeat center / cover;
+  background: #000 url("../images/card-lot-01.jpg") no-repeat center / cover;
 }
 
 .card_type_book {
-  background: url("../images/card-lot-02.jpg") no-repeat center / cover;
+  background: #000 url("../images/card-lot-02.jpg") no-repeat center / cover;
 }
 
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg") no-repeat center / cover;
+  background: #000 url("../images/card-lot-03.jpg") no-repeat center / cover;
 }
 
 .lots__look-more-link {
@@ -208,7 +210,7 @@
 
 .about__column {
   display: grid;
-  grid: 596px 0 / 334px 1fr;
+  grid: 596px / 334px 1fr;
 }
 
 .about__logo {
@@ -242,11 +244,10 @@
   text-transform: uppercase;
 }
 
-.about__title + .about__text {
-  margin-bottom: 24px;
-}
-
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -263,7 +264,7 @@
 }
 
 .footer__menu-list {
-  display: flex;
+  display: flex; /* Тут Флекс не обязательно. Просто отценрировать text-align */
   flex-direction: column;
   align-items: center;
   font-weight: 400;
@@ -283,6 +284,7 @@
 
 .footer__social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-self: end;
   gap: 48px;
   max-width: 240px;
